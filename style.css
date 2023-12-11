@@ -126,7 +126,7 @@ header {
     margin-bottom: 50px;
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 .review {
@@ -197,4 +197,55 @@ footer {
     display: flex;
     gap: 20px;
     margin-top: 40px;
+}
+@media (min-width: 768px) {
+    .hero-background {
+        background-image: url(images/desktop/image-header.jpg);
+        background-position: center;
+        padding: 0px 20px;
+        min-height: 600px;
+    }
+    .hero-section h2 {
+        letter-spacing: 10px;
+    }
+    
+    .first-section, .second-section, .third-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 500px;
+    }
+    .third-section {
+        min-height: 500px;
+    }
+    .img-container {
+        background-size: cover;
+    }
+    .orangeImage {
+        order: 2;
+        background-image: url(images/desktop/image-transform.jpg);
+    }
+    .cupImage {
+        background-image: url(images/desktop/image-stand-out.jpg);
+    }
+    .graphic-design {
+        background-image: url(images/desktop/image-graphic-design.jpg);
+    }
+    .photography {
+        background-image: url(images/desktop/image-photography.jpg);
+    }
+    .content {
+        max-width: 400px;
+    }
+    .reviews-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 50px;
+        gap: 50px;
+    }
+    .images-section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .reviews-container h2 {
+        margin-bottom: 0px;
+    }
 }
