@@ -6,6 +6,9 @@
 .websiteLogo {
     object-fit: contain;
 }
+.desktopMenu {
+    display: none;
+} 
 .hero-background {
     background-image: url(images/mobile/image-header.jpg);
     width: 100%;
